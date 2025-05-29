@@ -1,32 +1,15 @@
-AI Stock Price Predictor Using LSTM
+Personalized Healthcare Recommendations Using Deep Learning
 
-This project utilizes a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras to predict future stock prices based on historical stock market data. The goal is to help investors and analysts understand stock trends using AI-powered time series forecasting.
+This project uses a neural network model built with TensorFlow/Keras to predict the likelihood of diabetes in individuals based on health parameters. It then provides personalized healthcare recommendations based on the predicted risk level.
 Dataset
 
-The model is trained on a stock dataset (ADANIPORTS.csv) that includes daily records of:
-
-    Open Price
-
-    High Price
-
-    Low Price
-
-    Close Price
-
-    Volume
-
-This dataset provides a solid basis for training the model to identify patterns over time.
+The model is trained on a diabetes prediction dataset containing features like age, gender, hypertension, heart disease, BMI, HbA1c level, blood glucose level, and smoking history.
 Project Highlights
 
-    Time-series data preprocessing using MinMaxScaler.
-
-    Sequence generation for LSTM input.
-
-    LSTM model architecture using Keras (TensorFlow backend).
-
-    Model training and prediction on test data.
-
-    Visualization comparing predicted vs actual stock prices.
+    Data preprocessing including encoding and normalization.
+    Neural network model training and evaluation.
+    Real-time healthcare recommendations by patient serial number.
+    Accuracy visualization and classification metrics.
 
 Dependencies
 
@@ -37,30 +20,7 @@ pip install -r requirements.txt
 Usage
 
     Clone the repository.
+    Place diabetes_prediction_dataset.csv in the root directory.
+    Run the Python script.
 
-    Place ADANIPORTS.csv in the root directory.
-
-    Run the Python script (stock_predictor.py or similar).
-
-The script will:
-
-    Load and process the dataset.
-
-    Train an LSTM model on the training set.
-
-    Predict on the test set.
-
-    Plot actual vs predicted prices for visual comparison.
-
-Sample Output
-
-The output includes a line plot:
-
-    🔵 Blue Line: Actual Stock Prices
-
-    🔴 Red Line: Predicted Stock Prices
-
-This plot helps evaluate the model’s performance visually.
-Author
-
-Developed using Python, Pandas, NumPy, Scikit-learn, Matplotlib, and TensorFlow/Keras.
+You will be prompted to enter a serial number (row index) to get 
